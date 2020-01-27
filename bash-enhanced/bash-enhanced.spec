@@ -1,6 +1,7 @@
 Name:           bash-enhanced
 Version:        0.1
 Release:        1%{?dist}
+BuildArch:      noarch
 Summary:        Szpadel's opinionated bash enhancments
 
 License:        GPL3
@@ -14,6 +15,7 @@ Source0:        bash-enhanced.tar.gz
 Szpadel's opinionated bash enhancments
 
 %prep
+%autosetup -n files 
 
 %build
 
