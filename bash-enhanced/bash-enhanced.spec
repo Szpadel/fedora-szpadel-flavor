@@ -14,10 +14,10 @@ Source0:        %{expand:%%(pwd)}
 Szpadel's opinionated bash enhancments
 
 %prep
-
+%setup -q
 
 %build
-
+ls
 
 %install
 rm -rf $RPM_BUILD_ROOT
