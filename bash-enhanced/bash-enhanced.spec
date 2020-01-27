@@ -6,7 +6,6 @@ Summary:        Szpadel's opinionated bash enhancments
 License:        GPL3
 URL:            https://github.com/Szpadel/fedora-szpadel-flavor
 
-BuildRequires:  
 Requires:       hstr
 
 Source0:        %{expand:%%(pwd)}
