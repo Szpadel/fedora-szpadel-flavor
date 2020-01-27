@@ -22,7 +22,7 @@ Szpadel's opinionated bash enhancments
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p %{buildroot}/etc/profile.d/
-cp ${SOURCEURL0}/profile.d/*.sh %{buildroot}/etc/profile.d/
+cp profile.d/*.sh %{buildroot}/etc/profile.d/
 
 
 %files
