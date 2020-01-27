@@ -4,7 +4,7 @@ Release:        1%{?dist}
 Summary:        Szpadel's opinionated bash enhancments
 
 License:        GPL3
-URL:            
+URL:            https://github.com/Szpadel/fedora-szpadel-flavor
 
 BuildRequires:  
 Requires:       hstr
