@@ -8,16 +8,14 @@ URL:            https://github.com/Szpadel/fedora-szpadel-flavor
 
 Requires:       hstr
 
-Source0:        %{expand:%%(pwd)}
+Source0:        bash-enhanced.tar.gz
 
 %description
 Szpadel's opinionated bash enhancments
 
 %prep
-%setup -q
 
 %build
-ls
 
 %install
 rm -rf $RPM_BUILD_ROOT
