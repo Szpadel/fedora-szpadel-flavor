@@ -1,5 +1,5 @@
 Name:           bash-enhanced
-Version:        0.1
+Version:        0.2
 Release:        1%{?dist}
 BuildArch:      noarch
 Summary:        Szpadel's opinionated bash enhancments
@@ -34,5 +34,8 @@ cp profile.d/*.sh %{buildroot}/etc/profile.d/
 
 
 %changelog
+* Thu Jun 04 2020 Piotr Rogowski <piotr.rogowski@creativestyle.pl> - 0.2-1
+- Fix color for hstr
+
 * Mon Jan 27 2020 Piotr Rogowski <piotr.rogowski@creativestyle.pl>
 - 
