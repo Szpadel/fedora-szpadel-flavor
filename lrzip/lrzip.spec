@@ -1,15 +1,15 @@
 Name: lrzip
-Version: 0.631
+Version: 0.725
 Release: 1%{?dist}
 
 Summary: Long Range ZIP or Lzma RZIP
 License: GPLv2+
 Group: Applications/File
 
-Url: http://ck.kolivas.org/apps/lrzip/
-Source0: https://github.com/ckolivas/lrzip/archive/v%{version}.tar.gz
+Url: https://github.com/pete4abw/lrzip
+Source0: https://github.com/pete4abw/lrzip/archive/v%{version}.tar.gz
 
-BuildRequires: doxygen gcc-c++ lzo-devel nasm perl-Pod-Parser zlib-devel coreutils make autoconf automake libtool bzip2-devel
+BuildRequires: doxygen gcc-c++ lzo-devel perl-Pod-Parser zlib-devel coreutils make autoconf automake libtool bzip2-devel
 
 %description
 This is a compression program optimised for large files. The larger the file
@@ -93,6 +93,8 @@ rm COPYING.new
 %{_libdir}/lib%{name}.a
 
 %changelog
+* Sat Oct 31 2020 Piotr Rogowski <piotr.rogowski@creativestyle.pl> - 0.725-1
+- Update to fork of pete4abw
+
 * Mon Jan 27 2020 Piotr Rogowski <piotr.rogowski@creativestyle.pl> - 0.631-1
 - rebuilt
-
