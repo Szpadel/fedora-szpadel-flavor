@@ -59,7 +59,7 @@ mkdir -vp %{buildroot}/usr/lib64/libfprint-2/tod-1
 %{_libdir}/girepository-1.0/*.typelib
 /usr/lib/udev/hwdb.d/60-autosuspend-libfprint-2.hwdb
 %dir /usr/lib64/libfprint-2/tod-1
-
+%{_udevrulesdir}/70-libfprint-2.rules
 
 %files devel
 %doc HACKING.md
