@@ -43,7 +43,7 @@ developing applications that use %{name}.
 
 %build
 # Include the virtual image driver for integration tests
-%meson -Dx11-examples=false -Ddrivers=all
+%meson -Dx11-examples=false 
 %meson_build
 
 %install
@@ -51,9 +51,6 @@ developing applications that use %{name}.
 mkdir -vp %{buildroot}/usr/lib64/libfprint-2/tod-1
 
 %ldconfig_scriptlets
-
-#%check
-#%meson_test
 
 %files
 %license COPYING
