@@ -57,7 +57,6 @@ format.
 %install
 %makeinstall
 
-install -pDm644 Lrzip.h %buildroot%_includedir/Lrzip.h
 find $RPM_BUILD_ROOT -name '*.la' -exec rm {} +
 
 %check
