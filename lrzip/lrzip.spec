@@ -9,7 +9,7 @@ Group: Applications/File
 Url: https://github.com/pete4abw/lrzip-next
 Source0: https://github.com/pete4abw/lrzip-next/archive/v%{version}.tar.gz
 
-BuildRequires: doxygen gcc-c++ lzo-devel perl-Pod-Parser zlib-devel coreutils make autoconf automake libtool bzip2-devel
+BuildRequires: doxygen gcc-c++ lzo-devel perl-Pod-Parser zlib-devel coreutils make autoconf automake libtool bzip2-devel lz4-devel
 
 %description
 This is a compression program optimised for large files. The larger the file
