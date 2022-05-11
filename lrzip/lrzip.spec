@@ -8,6 +8,7 @@ Group: Applications/File
 
 Url: https://github.com/pete4abw/lrzip-next
 Source0: https://github.com/pete4abw/lrzip-next/archive/v%{version}.tar.gz
+Patch0: 0001-hardcode-version.patch
 
 BuildRequires: doxygen gcc-c++ lzo-devel perl-Pod-Parser zlib-devel coreutils make autoconf automake libtool bzip2-devel lz4-devel libgpg-error-devel libgcrypt-devel
 
@@ -49,6 +50,7 @@ format.
 %autosetup -n lrzip-next-%{version}
 
 %build
+%patch0 -p1
 ./autogen.sh
 %configure --enable-shared --enable-static --disable-static-bin --disable-silent-rules
 %make_build
