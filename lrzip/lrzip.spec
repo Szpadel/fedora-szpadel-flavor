@@ -46,7 +46,7 @@ format.
 
 
 %prep
-%autosetup -n lrzip-next-v%{version}
+%autosetup -n lrzip-next-%{version}
 
 %build
 ./autogen.sh
