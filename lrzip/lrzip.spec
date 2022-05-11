@@ -47,10 +47,9 @@ format.
 
 
 %prep
-%autosetup -n lrzip-next-%{version}
+%autosetup -n lrzip-next-%{version} -p1
 
 %build
-%patch0 -p1
 ./autogen.sh
 %configure --enable-shared --enable-static --disable-static-bin --disable-silent-rules
 %make_build
