@@ -1,13 +1,13 @@
 Name: lrzip
-Version: 0.725
+Version: 0.8.14
 Release: 1%{?dist}
 
 Summary: Long Range ZIP or Lzma RZIP
 License: GPLv2+
 Group: Applications/File
 
-Url: https://github.com/pete4abw/lrzip
-Source0: https://github.com/pete4abw/lrzip/archive/v%{version}.tar.gz
+Url: https://github.com/pete4abw/lrzip-next
+Source0: https://github.com/pete4abw/lrzip-next/archive/v%{version}.tar.gz
 
 BuildRequires: doxygen gcc-c++ lzo-devel perl-Pod-Parser zlib-devel coreutils make autoconf automake libtool bzip2-devel
 
@@ -46,7 +46,7 @@ format.
 
 
 %prep
-%autosetup -n %{name}-%{version}
+%autosetup -n lrzip-next-v%{version}
 
 %build
 ./autogen.sh
