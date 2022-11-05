@@ -54,7 +54,7 @@ mkdir -vp %{buildroot}/usr/lib64/libfprint-2/tod-1
 
 %files
 %license COPYING
-%doc NEWS TODO THANKS AUTHORS README
+%doc NEWS TODO THANKS AUTHORS
 %{_libdir}/*.so.*
 %{_libdir}/girepository-1.0/*.typelib
 /usr/lib/udev/hwdb.d/60-autosuspend-libfprint-2.hwdb
