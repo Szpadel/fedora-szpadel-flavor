@@ -1,5 +1,5 @@
 Name:           bash-enhanced
-Version:        0.2
+Version:        0.3
 Release:        1%{?dist}
 BuildArch:      noarch
 Summary:        Szpadel's opinionated bash enhancments
@@ -15,7 +15,7 @@ Source0:        bash-enhanced.tar.gz
 Szpadel's opinionated bash enhancments
 
 %prep
-%autosetup -n files 
+%autosetup -n files
 
 %build
 
@@ -34,8 +34,11 @@ cp profile.d/*.sh %{buildroot}/etc/profile.d/
 
 
 %changelog
+* Fri Jul 14 2023 Piotr Rogowski <piotr.rogowski@creativestyle.pl> - 0.3
+- Update config for hstr
+
 * Thu Jun 04 2020 Piotr Rogowski <piotr.rogowski@creativestyle.pl> - 0.2-1
 - Fix color for hstr
 
 * Mon Jan 27 2020 Piotr Rogowski <piotr.rogowski@creativestyle.pl>
-- 
+-
