@@ -11,7 +11,7 @@ function fish_prompt --description 'Informative prompt'
     set -l pipestatus_string (test -z "$pipestatus_string"; and echo ""; or echo "$pipestatus_string")
 
     if functions -q fish_is_root_user; and fish_is_root_user
-        printf '%s%s%s %s%s %s%s$ ' $pipestatus_string (set_color --bold red) \
+        printf '%s%s%s %s%s %s%s# ' $pipestatus_string (set_color --bold red) \
             (prompt_hostname) (set_color --bold $fish_color_cwd) $PWD \
             (set_color --bold $fish_color_cwd)
     else
