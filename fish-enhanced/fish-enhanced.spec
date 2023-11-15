@@ -9,6 +9,8 @@ URL:            https://github.com/Szpadel/fedora-szpadel-flavor
 
 Source0:        fish-enhanced.tar.gz
 
+Requires:       fish
+
 %description
 Szpadel's opinionated fish enhancments
 
