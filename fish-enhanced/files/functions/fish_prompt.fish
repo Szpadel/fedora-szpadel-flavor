@@ -12,12 +12,12 @@ function fish_prompt --description 'Informative prompt'
 
     if functions -q fish_is_root_user; and fish_is_root_user
         printf '%s%s%s %s%s %s%s# ' $pipestatus_string (set_color --bold red) \
-            (prompt_hostname) (set_color --bold $fish_color_cwd) $PWD \
+            (prompt_hostname) (set_color --bold $fish_color_cwd) (prompt_pwd) \
             (set_color --bold $fish_color_cwd)
     else
 
         printf '%s%s%s@%s %s%s %s%s$ ' $pipestatus_string (set_color --bold green) \
-            $USER (prompt_hostname) (set_color --bold $fish_color_cwd) $PWD \
+            $USER (prompt_hostname) (set_color --bold $fish_color_cwd) (prompt_pwd) \
             (set_color --bold $fish_color_cwd)
     end
 end

@@ -1,6 +1,6 @@
 Name:           fish-enhanced
 Version:        0.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 BuildArch:      noarch
 Summary:        Szpadel's opinionated fish enhancements
 
@@ -33,6 +33,9 @@ cp -r conf.d/* %{buildroot}/etc/fish/conf.d/
 
 
 %changelog
+* Fri Nov 17 2023 Piotr Rogowski <piotr.rogowski@creativestyle.pl> - 0.1-3
+- update pwd
+
 * Wed Nov 15 2023 Piotr Rogowski <piotr.rogowski@creativestyle.pl> - 0.1-2
 - rebuilt
 
