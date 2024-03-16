@@ -11,13 +11,14 @@ function __detect_ssh_session
         set -l fish_ppid $fish_pid
         while test $fish_ppid -gt 1
             set fish_ppid (ps -o ppid= -p $fish_ppid | string trim)
-            echo (ps -o comm= -p $fish_ppid)
             switch (ps -o comm= -p $fish_ppid)
                 case sshd
+                    set -g SESSION_TYPE remote/ssh
+                    return 0
                 case '*/sshd'
                     set -g SESSION_TYPE remote/ssh
                     return 0
-                case 'systemd'
+                case systemd
                     set -g SESSION_TYPE local
                     return 0
             end
