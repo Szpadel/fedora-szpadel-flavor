@@ -24,7 +24,7 @@ function fish_prompt --description 'Informative prompt'
             (prompt_hostname) (set_color --bold $fish_color_cwd) (prompt_pwd) \
             (set_color --bold $fish_color_cwd)
     else
-        printf '%s%s%s@%s %s%s %s%s$ ' $pipestatus_string (set_color --bold green) \
+        printf '%s%s%s@%s%s %s%s %s%s$ ' $pipestatus_string (set_color --bold green) \
             $USER (set_color --bold $color_host) (prompt_hostname) (set_color --bold $fish_color_cwd) (prompt_pwd) \
             (set_color --bold $fish_color_cwd)
     end
