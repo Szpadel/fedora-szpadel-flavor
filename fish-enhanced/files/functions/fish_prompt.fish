@@ -13,10 +13,12 @@ function fish_prompt --description 'Informative prompt'
     # If we're running via SSH, change the host color.
     set -l color_host $fish_color_host
     if set -q SSH_TTY; and set -q fish_color_host_remote
-        set -l color_host $fish_color_host_remote
+        set color_host $fish_color_host_remote
         if functions -q fish_is_root_user; and fish_is_root_user; and set -q fish_color_host_remote_root
-            set -l color_host $fish_color_host_remote_root
+            set color_host $fish_color_host_remote_root
         end
+    else if functions -q fish_is_root_user; and fish_is_root_user; and set -q fish_color_host_root
+        set color_host $fish_color_host_root
     end
 
     if functions -q fish_is_root_user; and fish_is_root_user
