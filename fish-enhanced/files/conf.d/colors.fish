@@ -9,6 +9,7 @@ set -g fish_color_error "brred"
 set -g fish_color_escape "brcyan"
 set -g fish_color_history_current "--bold"
 set -g fish_color_host "green"
+set -g fish_color_host_root "red"
 set -g fish_color_host_remote "yellow"
 set -g fish_color_host_remote_root "magenta"
 set -g fish_color_keyword (echo \x1d)
