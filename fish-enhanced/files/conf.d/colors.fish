@@ -8,8 +8,9 @@ set -g fish_color_end "ff0000"
 set -g fish_color_error "brred"
 set -g fish_color_escape "brcyan"
 set -g fish_color_history_current "--bold"
-set -g fish_color_host "normal"
-set -g fish_color_host_remote (echo \x1d)
+set -g fish_color_host "green"
+set -g fish_color_host_remote "yellow"
+set -g fish_color_host_remote_root "magenta"
 set -g fish_color_keyword (echo \x1d)
 set -g fish_color_normal "normal"
 set -g fish_color_operator "brcyan"

@@ -1,6 +1,6 @@
 Name:           fish-enhanced
-Version:        0.1
-Release:        3%{?dist}
+Version:        0.2
+Release:        1%{?dist}
 BuildArch:      noarch
 Summary:        Szpadel's opinionated fish enhancements
 
@@ -33,6 +33,9 @@ cp -r conf.d/* %{buildroot}/etc/fish/conf.d/
 
 
 %changelog
+* Sat Mar 16 2024 Piotr Rogowski <piotr.rogowski@creativestyle.pl> - 0.2-1
+- Color prompt when connected via SSH
+
 * Fri Nov 17 2023 Piotr Rogowski <piotr.rogowski@creativestyle.pl> - 0.1-3
 - update pwd
 
