@@ -1,2 +1,2 @@
-bind --preset -k npage history-prefix-search-forward
-bind --preset -k ppage history-prefix-search-backward
+bind --preset pagedown history-prefix-search-forward
+bind --preset pageup history-prefix-search-backward

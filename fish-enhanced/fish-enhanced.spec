@@ -1,6 +1,6 @@
 Name:           fish-enhanced
-Version:        0.2
-Release:        9%{?dist}
+Version:        0.3
+Release:        1%{?dist}
 BuildArch:      noarch
 Summary:        Szpadel's opinionated fish enhancements
 
@@ -9,7 +9,7 @@ URL:            https://github.com/Szpadel/fedora-szpadel-flavor
 
 Source0:        fish-enhanced.tar.gz
 
-Requires:       fish
+Requires:       fish >= 4.2.0
 
 %description
 Szpadel's opinionated fish enhancements
