@@ -17,7 +17,7 @@ Summary:        BPF/tracing tools for auto-tuning Linux
 Group:          Development/Tools
 Version:        %{version}
 Release:        %{release}
-Source:         https://github.com/oracle/bpftune/archive/refs/tags/%{version}.tar.bz2
+Source:         https://github.com/oracle/bpftune/archive/refs/tags/%{version}.tar.gz
 Prefix:         %{_prefix}
 Requires:       libbpf >= 0.6
 Requires:       libnl3
