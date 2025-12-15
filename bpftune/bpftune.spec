@@ -67,8 +67,10 @@ make
 %install
 rm -Rf %{buildroot}
 %make_install
+%if 0%{?fedora} >= 42
 # Fedora unified sbin and bin https://fedoraproject.org/wiki/Changes/Unify_bin_and_sbin
-mv %{buildroot}/sbin/* %{buildroot}/bin/
+mv %{buildroot}/usr/sbin/* %{buildroot}/bin/bin/
+%endif
 
 %files
 %defattr(-,root,root)
