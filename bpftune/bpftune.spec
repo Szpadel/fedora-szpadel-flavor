@@ -71,6 +71,7 @@ rm -Rf %{buildroot}
 # Fedora unified sbin and bin https://fedoraproject.org/wiki/Changes/Unify_bin_and_sbin
 install -p -m 0755 -d %{buildroot}/usr/bin
 mv %{buildroot}/usr/sbin/* %{buildroot}/usr/bin/
+sed -i s/sbin/bin/ %{_unitdir}/bpftune.service
 %endif
 
 %files
