@@ -59,7 +59,7 @@ The %{name}-pcp-pmda exports tunables and metrics from bpftune
 to Performance Co-Pilot (PCP)
 
 %prep
-%setup -q -n bpftune-%{version}
+%setup -q -n bpftune-%{version}-%{rel}
 
 %build
 make
