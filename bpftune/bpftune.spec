@@ -67,6 +67,8 @@ make
 %install
 rm -Rf %{buildroot}
 %make_install
+# Fedora unified sbin and bin https://fedoraproject.org/wiki/Changes/Unify_bin_and_sbin
+mv %{buildroot}/sbin/* %{buildroot}/bin/
 
 %files
 %defattr(-,root,root)
